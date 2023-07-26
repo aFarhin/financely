@@ -1,0 +1,39 @@
+.btn {
+
+  width: 100%;
+  font-size: .9rem;
+  background-color: #e1e5ebd2;
+  /* border: .1px solid var(--theme); */
+  border-radius: 0.15rem;
+  cursor: pointer;
+  font-weight: 700;
+  padding-bottom: .5rem;
+  padding-top: .5rem;
+  margin-bottom: .6rem;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  height: auto !important;
+  font-weight: 500;
+  box-shadow: 1px 1px 5px rgb(3, 3, 19);
+  color: var(--theme)
+}
+
+.btn:hover {
+  background-color: var(--theme);
+  color: #fff;
+  transition: all 0.3s;
+}
+
+.btn-blue {
+  background-color: var(--theme);
+  color: #fff;
+}
+
+.btn-blue:hover {
+  background-color: #e1e4e9b6!important;
+  color: var(--theme) !important;
+  transition: all 0.3s;
+} 
+
+
