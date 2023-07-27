@@ -53,8 +53,8 @@ const Header = () => {
               padding: 0,
             }}
           >
-            <FaSignOutAlt style={{ fontSize: "20px", color: "white", fontWeight:"bold", marginRight: "2rem"}} />
-            Logout
+            <FaSignOutAlt style={{ fontSize: "20px", color: "white", fontWeight:"bold", marginRight: "1rem"}} ></FaSignOutAlt>
+          
           </button>
         </div>
       )}

@@ -1,15 +1,16 @@
 .navbar {
   background-color: var(--theme);
   padding: .8rem 2rem;
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
+  right: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 1000;
   box-shadow: 2px 2px 7px ;
-  width: 100vw;
+  /* width: 100vw; */
 }
 .logo {
   color: var(--theme);

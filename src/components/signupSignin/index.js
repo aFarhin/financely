@@ -138,7 +138,7 @@ const SignupSigninComponent = () => {
   }
 
   return (
-    <>
+    <div className="main-body">
       {loginForm ? (
         <div className='signup-wrapper'>
           <h2 className='title'>Login on <span className="blue-text">Financely.</span>
@@ -229,7 +229,7 @@ const SignupSigninComponent = () => {
           </form>
         </div>
       )}
-    </>
+    </div>
   );
 };
 

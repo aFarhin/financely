@@ -1,4 +1,4 @@
-import { Select, Table, Radio } from "antd";
+import { Select, Table } from "antd";
 import React, { useState } from "react";
 import searchImg from "../../assets/search.svg";
 import { parse, unparse } from "papaparse";
@@ -117,43 +117,43 @@ const TransactionsTable = ({
   function getRowClassName(index) {
     return index % 2 === 0 ? "table-row even-row" : "table-row odd-row";
   }
-  
-  
+
+
 
   return (
-    <div
-      style={{
-        width: "95%",
-        padding: "0rem 2rem",
-      }}
+    <div classname="responsive"
+    // style={{
+    //   width: "85%",
+    //   padding: "0rem 2rem",
+    // }}
     >
-      
 
-      <div className="my-table" style={{opacity:"5"}}>
+
+      <div className="my-table" style={{ opacity: "5" }}>
         <h2>My Transactions </h2>
-        
-        <div className="input-wrapper">
-        <div className="input-flex">
-          <img src={searchImg} width="16" alt="" />
-          <input
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
-            placeholder="Search by Name"
-          />
-        </div>
 
-        <Select
-          className="select-input"
-          onChange={(value) => setTypeFilter(value)}
-          value={typeFilter}
-          placeholder="Filter"
-          allowClear
-        >
-          <Option value="">All</Option>
-          <Option value="income">Income</Option>
-          <Option value="expense">Expense</Option>
-        </Select>
-      </div>
+        <div className="input-wrapper">
+          <div className="input-flex">
+            <img src={searchImg} width="16" alt="" />
+            <input
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+              placeholder="Search by Name"
+            />
+          </div>
+
+          <Select
+            className="select-input"
+            onChange={(value) => setTypeFilter(value)}
+            value={typeFilter}
+            placeholder="Filter"
+            allowClear
+          >
+            <Option value="">All</Option>
+            <Option value="income">Income</Option>
+            <Option value="expense">Expense</Option>
+          </Select>
+        </div>
         <div className="table-wrapper">
 
           <Select
@@ -170,7 +170,7 @@ const TransactionsTable = ({
           </Select>
 
           <div
-          className="btn-wrapper-new"
+            className="btn-wrapper-new"
             style={{
               display: "flex",
               justifyContent: "center",
@@ -199,7 +199,8 @@ const TransactionsTable = ({
           dataSource={sortedTransactions}
           columns={columns}
           className="table"
-          rowClassName={(record, index) => getRowClassName(index)}
+          rowClassName={(index) => getRowClassName(index)}
+          size="small"
         />
       </div>
     </div>

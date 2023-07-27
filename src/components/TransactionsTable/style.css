@@ -5,19 +5,20 @@
   font-size: 30px;
 }
 .my-table{
-  background-color:rgba(243, 243, 236, 0.836);
-  box-shadow: 2px 2px 10px;
-  padding: 1rem;
-  /* margin: 2rem; */
+  /* background-color:rgba(243, 243, 236, 0.836); */
+  /* box-shadow: 2px 2px 10px; */
+  /* padding: 1rem; */
+  margin: 2rem;
   border-radius: 10px;
   opacity: 5;
-  /* width: 82vw; */
+  width: 90vw;
 }
 .input-wrapper {
   display: flex;
   justify-content: space-between;
   gap: 1rem;
   align-items: center;
+  /* margin: 2rem; */
   margin-bottom: 1rem;
   /* background-color: rgb(243, 243, 236); */
   
@@ -29,7 +30,7 @@
   background-color:rgba(243, 243, 236, 0.836);
 }
 .select-input {
-  width: 30vw !important;
+  width: 50vw !important;
   box-shadow: 2px 2px 10px;
   border: 1px solid grey;
   background-color:rgba(243, 243, 236, 0.815);
@@ -40,43 +41,59 @@
   justify-content: space-between;
   /* background-color:rgba(243, 243, 236, 0.836); */
   align-items: center;
-  width: 100%;
-  margin: .2rem;
+  width: 90vw;
+  /* margin: .2rem; */
   flex-wrap: wrap;
  
 }
 
 .table {
-  border-collapse: collapse;
-  width: 100vw;
+  /* border-collapse: collapse; */
+  /* width: 100vw; */
   height: auto;
-  box-shadow: 2px 2px 10px;
-  padding: 1rem;
+  /* box-shadow: 2px 2px 10px; */
+  /* padding: .5rem; */
+  /* margin: 2rem; */
     margin-bottom: 2.5rem;
   margin-top: 2rem;
-  background-color: beige;
+  /* background-color: beige; */
  
+}
+
+.ant-table {
+  border-collapse: collapse;
+  /* width: 60vw; */
+  height: auto;
+  /* border: 1px solid black; */
+  /* box-shadow: 2px 2px 10px black; */
+  /* padding: .5rem; */
+  /* margin-bottom: 2.5rem; */
+  margin-top: 2rem;
+  background-color: beige;
 }
 
 
 .even-row {
-  background-color: #ebf3f8;
-  /* border-bottom: 2px solid #2b2eec; */
+  background-color: #b5dbf3;
+  padding: 0rem;
+ 
 }
 
 .odd-row {
   background-color: #d2d7e7;
+  padding: 0rem;
   /* border-bottom: 2px solid #2b2eec; */
 }
 
-/* .table-cell {
-  padding: 8px;
-} */
+
 
 .name-cell {
   
   color: rgb(95, 9, 16);
   /* font-weight: bold; */
+  padding: 0rem;
+  /* font-size: .6rem; */
+
   
 }
 
@@ -84,45 +101,117 @@
   
   color: rgb(5, 70, 5);
   /* font-weight: bold; */
-  
+  padding: 0rem;
+  /* font-size: .6rem; */
 }
 
 .custom-btn-new-1 {
-  font-size: 16px;
+  font-size: 12px;
   font-weight: normal;
   width: 32vw !important;
   height: 30px !important;
-  box-shadow: 2px 2px 10px black;
+  box-shadow: 2px 2px 10px;
+  border: none;
+  padding: .5rem;
 }
 .custom-btn-new-2 {
   height: 12px !important;
-  width: 30vw !important;
-  font-size: 16px;
+  width: 32vw !important;
+  font-size: 12px;
   font-weight: normal;
+  padding: .5rem;
   box-shadow: 2px 2px 10px black;
 }
+
+
 @media screen and (max-width: 758px) {
   .table {
-    width: 90vw;
+    width: 100vw;
+    margin-right: 2rem;
+   /* padding: 2rem; */
   }
-  .input-wrapper {
+  /* .input-wrapper {
     flex-wrap: wrap;
-  }
-  
-  .input-radio {
-    width: 90vw;
-  }
-  .ant-radio-group {
-    width: 90vw;
-    margin: 0.5rem;
-  }
+  } */
   .btn-wrapper-new {
     margin: 2rem;
   }
+  
+.name-cell {
+  
+  color: rgb(95, 9, 16);
+  /* font-weight: bold; */
+  padding: 0rem;
+  font-size: .6rem;
+
+  
+}
+
+.amount-cell {
+  
+  color: rgb(5, 70, 5);
+  /* font-weight: bold; */
+  padding: 0rem;
+  font-size: .6rem;
+}
   .input-flex {
-    width: 87vw !important;
+    width: 76vw !important;
+    font-size: .65rem
+    /* margin-left: 1rem; */
   }
   .select-input {
-    width: 90vw !important;
+    width: 76vw !important;
+    font-size: .65rem
+    /* margin-left: 1rem; */
   }
+ 
+  .custom-btn-new-1{
+    font-size: .7rem;
+    padding: .5rem;
+  }
+  .input-wrapper {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  
+.custom-btn-new-2{
+  font-size: .65rem;
+  padding: .5rem;
 }
+} 
+/* 
+
+@media screen and (max-width: 758px) {
+  .my-table {
+    padding: 0.5rem;
+    opacity: 1;
+    margin: 2rem;
+  }
+
+  .table-row {
+    padding: 0rem;
+    font-size: .5rem;
+  }
+  .table {
+    margin: 0;
+  }
+
+  .input-wrapper {
+    flex-direction: column;
+  }
+
+  .input-flex,
+  .select-input {
+    width: 100% !important;
+    margin-bottom: 0.5rem;
+  }
+
+  .table-wrapper {
+    flex-direction: column;
+  }
+
+  .btn-wrapper-new {
+    flex-direction: column;
+    align-items: center;
+  }
+} */

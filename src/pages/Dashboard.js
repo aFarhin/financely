@@ -156,7 +156,7 @@ const Dashboard  = () => {
       {loading ? (
          <Loader />
       ) : (
-        <>
+        <div  className="main">
           <Cards
             currentBalance={currentBalance}
             income={income}
@@ -185,7 +185,7 @@ const Dashboard  = () => {
             fetchTransactions={fetchTransactions}
             addTransaction={addTransaction}
           />
-        </>
+        </div>
       )}
     </div>
   );
