@@ -140,9 +140,9 @@ const SignupSigninComponent = () => {
   return (
     <>
       {loginForm ? (
-        <div className= 'signup-wrapper'>
-     <h2 className='title'>Login on <span className="blue-text">Financely.</span>
-            </h2>
+        <div className='signup-wrapper'>
+          <h2 className='title'>Login on <span className="blue-text">Financely.</span>
+          </h2>
           <form action="">
             <Input
               type="email"
@@ -162,10 +162,10 @@ const SignupSigninComponent = () => {
 
             <Button
               disabled={loading}
-              text={ loading ? "Loading..." : "Login using Email & Password"}
+              text={loading ? "Loading..." : "Login using Email & Password"}
               onClick={loginUsingEmail}
             />
-            <p style={{textAlign:"center", fontWeight:"600", fontSize:".7rem"}}>OR</p>
+            <p style={{ textAlign: "center", fontWeight: "600", fontSize: ".7rem" }}>OR</p>
             <Button
               onClick={googleAuth}
               text={loading ? "Loading..." : "Login using Google"}
@@ -218,7 +218,7 @@ const SignupSigninComponent = () => {
               onClick={signUpWithEmail}
             />
             <p className="p-login">OR</p>
-            <Button 
+            <Button
               onClick={googleAuth}
               text={loading ? "Loading..." : "Signup using Google"}
               blue={true}

@@ -1,14 +1,15 @@
-.signup-wrapper {
-  width: 80%;
+.signup-wrapper  {
+  width: 70%;
   max-width: 400px;
   height: auto;
-  margin-top:20px;
+  margin-top:2rem;
   border-radius: .5rem;
   box-shadow:  2px 5px 20px rgb(12, 12, 12);
   padding: 1.3rem;
   background-color: rgb(226, 232, 250);
   padding-left: 2.5rem;
   padding-right: 2.5rem;
+  margin: auto;
   /* opacity: 0.5; */
 }
 .title {
