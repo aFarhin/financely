@@ -12,6 +12,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
   position: relative;
+  margin-bottom : 1rem;
 
 }
 
