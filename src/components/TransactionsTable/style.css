@@ -5,69 +5,52 @@
   font-size: 30px;
 }
 .my-table{
-  /* background-color:rgba(243, 243, 236, 0.836); */
-  /* box-shadow: 2px 2px 10px; */
-  /* padding: 1rem; */
   margin: 2rem;
   border-radius: 10px;
   opacity: 5;
-  width: 90vw;
 }
+
 .input-wrapper {
   display: flex;
   justify-content: space-between;
   gap: 1rem;
   align-items: center;
-  /* margin: 2rem; */
-  margin-bottom: 1rem;
-  /* background-color: rgb(243, 243, 236); */
-  
+  margin-bottom: 1rem;  
 }
+
 .input-flex {
   width: 70vw !important;
   box-shadow: 2px 2px 10px;
   border: 1px solid grey;
-  background-color:rgba(243, 243, 236, 0.836);
+  background-color:rgba(215, 218, 247, 0.459);
 }
+
 .select-input {
   width: 50vw !important;
   box-shadow: 2px 2px 10px;
   border: 1px solid grey;
-  background-color:rgba(243, 243, 236, 0.815);
-  /* background-color: transparent; */
+  background-color:rgba(215, 218, 247, 0.459);
+  font-size: .5rem;
 }
+
+
 .table-wrapper {
   display: flex;
   justify-content: space-between;
-  /* background-color:rgba(243, 243, 236, 0.836); */
   align-items: center;
   width: 90vw;
-  /* margin: .2rem; */
   flex-wrap: wrap;
- 
 }
 
 .table {
-  /* border-collapse: collapse; */
-  /* width: 100vw; */
   height: auto;
-  /* box-shadow: 2px 2px 10px; */
-  /* padding: .5rem; */
-  /* margin: 2rem; */
-    margin-bottom: 2.5rem;
+  margin-bottom: 2.5rem;
   margin-top: 2rem;
-  /* background-color: beige; */
- 
 }
 
 .ant-table {
   border-collapse: collapse;
-  /* width: 60vw; */
   height: auto;
-  /* border: 1px solid black; */
-  /* box-shadow: 2px 2px 10px black; */
-  /* padding: .5rem; */
-  /* margin-bottom: 2.5rem; */
   margin-top: 2rem;
   background-color: beige;
 }
@@ -76,34 +59,24 @@
 .even-row {
   background-color: #b5dbf3;
   padding: 0rem;
- 
 }
+
 
 .odd-row {
   background-color: #d2d7e7;
   padding: 0rem;
-  /* border-bottom: 2px solid #2b2eec; */
 }
 
-
-
 .name-cell {
-  
   color: rgb(95, 9, 16);
-  /* font-weight: bold; */
   padding: 0rem;
-  /* font-size: .6rem; */
-
-  
 }
 
 .amount-cell {
-  
   color: rgb(5, 70, 5);
-  /* font-weight: bold; */
   padding: 0rem;
-  /* font-size: .6rem; */
 }
+
 
 .custom-btn-new-1 {
   font-size: 12px;
@@ -114,6 +87,7 @@
   border: none;
   padding: .5rem;
 }
+
 .custom-btn-new-2 {
   height: 12px !important;
   width: 32vw !important;
@@ -128,11 +102,8 @@
   .table {
     width: 100vw;
     margin-right: 2rem;
-   /* padding: 2rem; */
   }
-  /* .input-wrapper {
-    flex-wrap: wrap;
-  } */
+  
   .btn-wrapper-new {
     margin: 2rem;
   }
@@ -140,7 +111,6 @@
 .name-cell {
   
   color: rgb(95, 9, 16);
-  /* font-weight: bold; */
   padding: 0rem;
   font-size: .6rem;
 
@@ -150,19 +120,16 @@
 .amount-cell {
   
   color: rgb(5, 70, 5);
-  /* font-weight: bold; */
   padding: 0rem;
   font-size: .6rem;
 }
   .input-flex {
     width: 76vw !important;
     font-size: .65rem
-    /* margin-left: 1rem; */
   }
   .select-input {
     width: 76vw !important;
     font-size: .65rem
-    /* margin-left: 1rem; */
   }
  
   .custom-btn-new-1{
@@ -178,40 +145,4 @@
   font-size: .65rem;
   padding: .5rem;
 }
-} 
-/* 
-
-@media screen and (max-width: 758px) {
-  .my-table {
-    padding: 0.5rem;
-    opacity: 1;
-    margin: 2rem;
-  }
-
-  .table-row {
-    padding: 0rem;
-    font-size: .5rem;
-  }
-  .table {
-    margin: 0;
-  }
-
-  .input-wrapper {
-    flex-direction: column;
-  }
-
-  .input-flex,
-  .select-input {
-    width: 100% !important;
-    margin-bottom: 0.5rem;
-  }
-
-  .table-wrapper {
-    flex-direction: column;
-  }
-
-  .btn-wrapper-new {
-    flex-direction: column;
-    align-items: center;
-  }
-} */
+}

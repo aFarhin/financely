@@ -17,7 +17,6 @@
 }
 .custom-input {
   border: .5px solid rgb(201, 199, 199);
-  /* border-bottom: 1px solid rgb(107, 106, 106); */
   width: 100%;
   font-size: .7rem;
   /* text-transform: capitalize;  */

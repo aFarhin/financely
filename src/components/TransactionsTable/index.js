@@ -121,10 +121,11 @@ const TransactionsTable = ({
 
 
   return (
-    <div classname="responsive"
+    <div
     // style={{
-    //   width: "85%",
+    //   // width: "85%",
     //   padding: "0rem 2rem",
+
     // }}
     >
 

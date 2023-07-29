@@ -23,12 +23,9 @@
   font-weight: 500;
 }
 .line-chart {
-  width: 100%;
-  /* box-shadow: 2px 2px 10px; */
-  /* color: white; */
+  width: 80%;
 }
 .line-chart .li{
-  /* color: white; */
   font-weight: 900;
   font-size: 1rem;
 }
